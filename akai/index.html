@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKAI | Formularz zgłoszeniowy</title>
+	<link rel="icon" href="/img/logo-white.png">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section id="task-frontend">
+		<a href="https://akai.org.pl/" target="_blank">
+			<img src="img/logo-bright.png" alt="AKAI" id="logo-white">
+		</a>
+		<form>
+		    <input type="text" id="name" placeholder="Imię" required/>
+
+		    <input type="text" id="surname" placeholder="Nazwisko" required/>
+
+		    <input type="email" id="email" placeholder="E-mail" required/>
+			<span id="sections-text">Wybierz sekcje:</span>
+			<div class="sections">
+				<div class="column">
+					<div class="one-checkbox">
+						<div id="divcheck1">
+							<input type="checkbox" id="checkbox1" name="frontend" value="frontend" onclick="paint_checkbox(1)">
+							<label for="frontend">Frontend</label>
+						</div>
+					</div>
+
+					<div class="one-checkbox">
+						<div id="divcheck2">
+							<input type="checkbox" id="checkbox2" name="backend" value="backend" onclick="paint_checkbox(2)">
+							<label for="backend">Backend</label>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="one-checkbox">
+						<div id="divcheck3">
+							<input type="checkbox" id="checkbox3" name="mobile" value="mobile" onclick="paint_checkbox(3)">
+							<label for="mobile">Mobile</label>	
+						</div>
+					</div>
+
+					<div class="one-checkbox">
+						<div id="divcheck4">
+							<input type="checkbox" id="checkbox4" name="grafika" value="grafika" onclick="paint_checkbox(4)">
+							<label for="grafika">Grafika</label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<button onsubmit="return false">Wyślij zgłoszenie</button>
+		</form>
+	</section>
+	<section id="registered">
+		<p>Dziękujemy za zgłoszenie!</p>
+	</section>
+
+<script type="text/javascript" src="js/validation.js"></script>
+
+</body>
+</html>
